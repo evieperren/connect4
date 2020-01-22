@@ -23,18 +23,19 @@ hoverTarget.forEach(targ => {
         let target = e.target.dataset.target
         let targetedSquare = document.querySelectorAll(target)
         targetedSquare.forEach(square => {
-            dataNum.forEach(num => {
-                if(row1[num.dataset.num] === 1){
-                    square.className = 'game__hover-section--square--counter' 
-                }
-            })
-            // if()
+            if(square.parentElement.id === 'row-1'){
+                square.className = 'game__hover-section--square--counter' 
+
+                dataNum.forEach(num => {
+                    row1[num.dataset.num] // same as row[i]
+
+                })
+            }
             square.setAttribute('data-value', '1')
-            console.log(square)
         })
     })
 })
 
 
-let row2 = [0, 1, 0, 0, 0, 0, 0]
-let row1 = [0, 1, 0, 0, 0, 0, 0]
+let row2 = [0, 0, 0, 0, 0, 0, 0]
+let row1 = [0, 0, 0, 0, 0, 0, 0]
