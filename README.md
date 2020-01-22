@@ -1,1 +1,1 @@
-connect 4
+Connect 4 created with Vanilla JS

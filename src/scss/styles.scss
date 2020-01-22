@@ -1,0 +1,48 @@
+.game {
+    text-align: center;
+
+    &__container {
+        margin: 0 auto;
+        border: 1px solid grey;
+        height: 400px;
+        width: 400px;
+
+        &--row {
+            border: 1px solid pink;
+            height: 12%
+        }
+        &--square {
+            border: 1px solid lightblue;
+            height: 90%;
+            display: inline-block;
+            width: 12%;
+        }
+    }
+    &__hover-section {
+        height: 50px;
+        margin: 0 auto;
+        border: 1px solid orange;
+        width: 400px;
+
+        &--square {
+            border: 1px solid lightblue;
+            height: 90%;
+            display: inline-block;
+            width: 12%;
+            background-image: none;
+            
+            &--counter {
+                background-image: url('/assets/circle-solid.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                border: 1px solid lightblue;
+                width: 12%;
+                height: 90%;
+                display: inline-block;
+
+
+            }
+        }
+    }
+
+}

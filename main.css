@@ -1,0 +1,34 @@
+.game {
+  text-align: center; }
+  .game__container {
+    margin: 0 auto;
+    border: 1px solid grey;
+    height: 400px;
+    width: 400px; }
+    .game__container--row {
+      border: 1px solid pink;
+      height: 12%; }
+    .game__container--square {
+      border: 1px solid lightblue;
+      height: 90%;
+      display: inline-block;
+      width: 12%; }
+  .game__hover-section {
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid orange;
+    width: 400px; }
+    .game__hover-section--square {
+      border: 1px solid lightblue;
+      height: 90%;
+      display: inline-block;
+      width: 12%;
+      background-image: none; }
+      .game__hover-section--square--counter {
+        background-image: url("/assets/circle-solid.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid lightblue;
+        width: 12%;
+        height: 90%;
+        display: inline-block; }
